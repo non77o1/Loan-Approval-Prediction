@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/bg-main-desktop.png" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body ms-5">
+            <h5 class="card-title">Loan State Prediction</h5>
+            <div class="card-text">
+<form action="">
+              <div class="row mb-5">
+                <div class="col-md-4">
+                  <label class="d-block">ginder:</label>
+                  <br>
+                  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="Male" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="Male">Male</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="female" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="female">Female</label>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <label class="d-block">married:</label>
+                  <br>
+                  <div class="btn-group" role="marriedgroup" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="marriedYes" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="marriedYes">Yes</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="marriedNo" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="marriedNo">No</label>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <label class="d-block">dependents:</label>
+                  <br>
+                  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="ZeroDep" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="ZeroDep">0</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="OneDep" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="OneDep">1</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="TwoDep" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="TwoDep">2</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="ThreeDep" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="ThreeDep">3+</label>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="row mb-5">
+                <div class="col-md-4 ">
+                  <label class="d-block">Education:</label>
+                  <br>
+                  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="Graduate" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="Graduate">Graduate</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="NGraduate" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="NGraduate">not Graduate</label>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <label class="d-block">Employed:</label>
+                  <br>
+                  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="EmployedYes" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="EmployedYes">Yes</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="EmployedNo" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="EmployedNo">No</label>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <label class="d-block">Credit History:</label>
+                  <br>
+                  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="CHGood" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="CHGood">Good</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="CHBad" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="CHBad">Bad</label>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="row">
+                <div class="col-md-4 ">
+                  <div class="form-floating mb-3">
+                    <input type="input" class="form-control" id="loan_amount" placeholder="name@example.com">
+                    <label for="loan_amount">Loan Amount</label>
+                  </div>
+                </div>
+                <div class="col-md-4 ">
+                  <div class="form-floating mb-3">
+                    <input type="input" class="form-control" id="loan_amount_term" placeholder="name@example.com">
+                    <label for="loan_amount_term">Loan Amount Term</label>
+                  </div>
+                </div>
+                <div class="col-md-4 ">
+                  <div class="form-floating mb-3">
+                    <input type="input" class="form-control" id="total_income" placeholder="name@example.com">
+                    <label for="total_income">Total Income</label>
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Predict</button>
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 0000 0000 0000 0000
+    Jane Appleseed
+    00/00
+
+    000
+
+    Cardholder Name
+    e.g. Jane Appleseed
+
+    Card Number
+    e.g. 1234 5678 9123 0000
+
+    Exp. Date (MM/YY)
+    MM
+    YY
+
+    CVC
+    e.g. 123
+
+    Confirm
+
+    Completed state start -->
+
+  <!-- Thank you!
+    We've added your card details
+    Continue -->
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
