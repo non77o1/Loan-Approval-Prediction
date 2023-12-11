@@ -1,0 +1,13 @@
+.back-card{
+    width: 300px ;
+    height: 200px;
+    right: -210px;
+    top: 500px;
+}
+
+.front-card{
+    width: 300px ;
+    height: 200px;
+    right: -90px;
+    top: 50px;
+}
