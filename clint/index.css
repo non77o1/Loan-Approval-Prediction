@@ -1,13 +1,127 @@
-.back-card{
-    width: 300px ;
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Space+Grotesk:wght@500&display=swap');
+
+* {
+    font-family: 'Cairo', 'Space Grotesk', sans-serif;
+    Font: 18px;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light_grayish_violet: hsl(270, 3%, 87%);
+    --Dark_grayish_violet: hsl(279, 6%, 55%);
+    --Very_dark_violet: hsl(278, 68%, 11%);
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.back-card {
+    width: 300px;
     height: 200px;
     right: -210px;
     top: 500px;
 }
 
-.front-card{
-    width: 300px ;
+.front-card {
+    width: 300px;
     height: 200px;
     right: -90px;
     top: 50px;
+}
+
+.card-number {
+    font-size: 35px;
+    color: var(--White);
+    position: absolute;
+    top: 150px;
+    left: 25px;
+    font-weight: bold;
+}
+
+.card-date {
+    font-size: 15px;
+    /* font-weight: 100; */
+    color: var(--White);
+    position: absolute;
+    top: 210px;
+    left: 380px;
+}
+
+.card-name {
+    font-size: 15px;
+    /* font-weight: 100; */
+    color: var(--White);
+    position: absolute;
+    top: 210px;
+    left: 25px;
+}
+
+.front-card::after {
+    content: "";
+    position: absolute;
+    border-radius: 50px;
+    top: 40px;
+    left: 50px;
+    width: 60px;
+    height: 60px;
+    background: var(--White);
+    z-index: 1;
+}
+
+.front-card::before {
+    content: "";
+    position: absolute;
+    border-radius: 50px;
+    top: 70px;
+    left: 125px;
+    width: 30px;
+    height: 30px;
+    /* background: var(--White); */
+    border: 2px solid var(--White);
+    z-index: 1;
+}
+
+.card-cvv {
+    font-size: 15px;
+    /* font-weight: 100; */
+    color: var(--White);
+    position: absolute;
+    top: 110px;
+    left: 370px;
+}
+
+.form-floating>.form-control {
+    box-shadow: none !important;
+    border-color: #d0d5f7;
+}
+
+.form-floating>.form-control:focus {
+    border-color: #d0d5f7;
+    box-shadow: 5px 5px 5px #d0d5f7 !important;
+}
+
+group>.btn {
+    background-color: #d0d5f7;
+    color: #000;
+    border-color: #d0d5f7;
+}
+
+
+.btn-outline-primary {
+    color: red; /* Default text color */
+    border-color: red; /* Default border color */
+}
+
+.btn-outline-primary.active {
+    color: red; /* Clicked text color */
+    border-color: #0056b3; /* Clicked border color */
+    background-color: #e7f5ff; /* Clicked background color */
 }
